@@ -1,5 +1,5 @@
 # Stage 1: Build the application
-FROM maven:4.0.0-openjdk-17 AS build
+FROM maven:3.1.1-openjdk-17 AS build
 COPY . .
 RUN mvn clean package -DskipTests
 
